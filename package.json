@@ -4,7 +4,7 @@
   "description": "SASS-NPM code",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/antyep/nightfall_fest#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.77.6"
   }
 }
