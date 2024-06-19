@@ -1,3 +1,8 @@
+$main_font : "Montserrat", sans-serif;
+
 body {
-    background-color: cyan;
+    font-family: $main_font;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
