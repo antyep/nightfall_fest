@@ -1,0 +1,27 @@
+{
+  "name": "nightfall-fest",
+  "version": "1.0.0",
+  "description": "SASS-NPM code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antyep/nightfall_fest.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Antonio Yepez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antyep/nightfall_fest/issues"
+  },
+  "homepage": "https://github.com/antyep/nightfall_fest#readme",
+  "dependencies": {
+    "sass": "^1.77.6"
+  }
+}
