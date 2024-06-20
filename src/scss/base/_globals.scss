@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "variables" as var;
 
 //* Box Sizing *//
 
@@ -25,11 +25,11 @@ html {
 //* Body *//
 
 body {
-    font-family: v.$main_font;
+    font-family: var.$main_font;
     font-style: normal;
     font-size: 2rem;
     font-optical-sizing: auto;
-    color: v.$black;
+    color: var.$black;
 }
 
 body > section {
@@ -39,7 +39,7 @@ body > section {
 //* Paragraphs *//
 
 p {
-    color: v.$black;
+    color: var.$black;
     line-height: 1.5;
 
 }
