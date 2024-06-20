@@ -465,7 +465,17 @@ h3 {
   max-width: 120rem;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .about-fest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
 
+.fest-content {
+  margin-top: 5rem;
+}
 .fest-content h1 {
   margin-bottom: 2rem;
 }

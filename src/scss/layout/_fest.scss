@@ -3,9 +3,16 @@
 
 .about-fest {
     @include mix.container;
+
+    @include mix.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
 }
 
 .fest-content {
+    margin-top: 5rem;
     h1 {
         margin-bottom: 2rem;
     }
