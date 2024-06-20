@@ -17,7 +17,14 @@
 }
 
 .main-navigation {
-    a {
-    color: white;
-    }
+    display: flex;
+    gap: 2rem;
+        a {
+            color: white;
+            font-size: 2.4rem;
+            
+            &:hover {
+                color: v.$yellow;
+            }
+        }
 }
