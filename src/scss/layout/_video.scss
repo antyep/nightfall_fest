@@ -3,6 +3,9 @@
 
 .home-video {
     position: relative;
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden;
         .overlay {
             position: absolute;
             background: linear-gradient(
@@ -11,9 +14,34 @@
                 rgba(darken(var.$purple, 20%), 90%)
             );
             inset: 0;
+            display: flex;
+            align-items: center;
+}
+
+    video {
+        display: block;
+        width: auto;
+        @include mix.desktop {
+            width: 100%;
         }
+    }
+}
 
-    .video {
+.video-content {
+    z-index: 10;
 
+    h2 {
+        color: var.$white;
+        font-size: 7rem;
+        margin: 0;
+    }
+    p {
+        display: inline-block;
+        background-color: var.$pink;
+        color: var.$white;
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        margin: 0;
     }
 }
