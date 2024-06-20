@@ -1,7 +1,8 @@
-@use "./base/variables" as v;
+@use "./base/variables" as var;
+@use "./base/mixins" as mix;
 
 .header {
-    background-color: v.$light_green;
+    background-color: var.$light_green;
 
     .content-header {
         display: flex;
@@ -11,7 +12,7 @@
     }
 
     h1 {
-        color: v.$white;
+        color: var.$white;
         margin: 0;
     }
 }
@@ -24,7 +25,9 @@
             font-size: 2.4rem;
             
             &:hover {
-                color: v.$yellow;
+                color: var.$yellow;
             }
         }
 }
+
+
