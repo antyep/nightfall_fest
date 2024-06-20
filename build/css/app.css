@@ -378,6 +378,17 @@ h3 {
 .header {
   background-color: #4CB8B3;
 }
+.header .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
 .header h1 {
   color: #FFFFFF;
+  margin: 0;
+}
+
+.main-navigation a {
+  color: white;
 }

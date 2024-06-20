@@ -3,7 +3,21 @@
 .header {
     background-color: v.$light_green;
 
+    .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
     h1 {
         color: v.$white;
+        margin: 0;
+    }
+}
+
+.main-navigation {
+    a {
+    color: white;
     }
 }
