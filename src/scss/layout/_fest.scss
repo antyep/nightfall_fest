@@ -4,3 +4,13 @@
 .about-fest {
     @include mix.container;
 }
+
+.fest-content {
+    h1 {
+        margin-bottom: 2rem;
+    }
+    .date { 
+        color: var.$light_green;
+        font-weight: 700;
+    }
+}
