@@ -374,3 +374,10 @@ h3 {
   font-size: 6rem;
   text-align: center;
 }
+
+.header {
+  background-color: #4CB8B3;
+}
+.header h1 {
+  color: #FFFFFF;
+}

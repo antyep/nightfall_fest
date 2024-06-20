@@ -1,1 +1,9 @@
 @use "./base/variables" as v;
+
+.header {
+    background-color: v.$light_green;
+
+    h1 {
+        color: v.$white;
+    }
+}
