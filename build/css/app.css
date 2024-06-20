@@ -309,10 +309,68 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
-  background-color: #000000;
-  color: #FFFFFF;
+  font-size: 2rem;
+  font-optical-sizing: auto;
+  color: #000000;
+}
+
+body > section {
+  padding: 10rem 0;
+}
+
+p {
+  color: #000000;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 6rem;
+  text-align: center;
 }

@@ -1,9 +1,82 @@
 @use "variables" as v;
 
+//* Box Sizing *//
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+//* Container *//
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+//* Body *//
+
 body {
     font-family: v.$main_font;
-    font-optical-sizing: auto;
     font-style: normal;
-    background-color: v.$black;
-    color: v.$white;
+    font-size: 2rem;
+    font-optical-sizing: auto;
+    color: v.$black;
+}
+
+body > section {
+    padding: 10rem 0;
+}
+
+//* Paragraphs *//
+
+p {
+    color: v.$black;
+    line-height: 1.5;
+
+}
+
+//* Links *//
+
+a {
+    text-decoration: none;
+}
+
+//* Images *//
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;    
+}
+
+//* Headings *//
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+h3 {
+    font-size: 6rem;
+    text-align: center;
 }
