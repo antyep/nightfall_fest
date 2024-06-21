@@ -1,1 +1,1 @@
-alert("healthcheck from scripts.js");
+alert("hello world 2");

@@ -17,7 +17,8 @@ export function css(done) {
 }
 
 export function dev() {
-  watch("src/scss/**/*.scss", css);
+  watch("./src/scss/**/*.scss", css);
+  watch("./src/js/**/*.js", js);
 }
 
 export default series(js, css, dev);
