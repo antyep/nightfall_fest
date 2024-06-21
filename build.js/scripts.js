@@ -20,6 +20,10 @@ function createGallery() {
   }
 
   function showImage(i) {
-    console.log("showImage", i);
+    const modal = document.createElement("DIV");
+    modal.classList.add("modal");
+
+    const body = document.querySelector("body");
+    body.appendChild(modal);
   }
 }
