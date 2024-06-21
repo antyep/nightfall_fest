@@ -474,7 +474,7 @@ h3 {
 }
 
 .fest-content {
-  margin-top: 5rem;
+  display: inline-block;
 }
 .fest-content h1 {
   margin-bottom: 2rem;
