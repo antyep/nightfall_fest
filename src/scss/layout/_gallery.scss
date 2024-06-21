@@ -25,7 +25,13 @@
 
 
 .modal {
+    display: grid;
+    place-items: center;
     position: fixed;
     inset: 0;
     background-color: rgba($color: var.$black, $alpha: 0.5)
+
+    img {
+        max-width: 100rem;
+    }
 }
