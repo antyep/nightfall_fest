@@ -97,6 +97,7 @@ function processImages(file, outputSubDir) {
 export function dev() {
   watch("./src/scss/**/*.scss", css);
   watch("./src/js/**/*.js", js);
+  watch("./src/img/**/*.{png, jpg}", images);
 }
 
 export default series(crop, js, css, images, dev);
