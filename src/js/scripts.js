@@ -27,6 +27,12 @@ function createGallery() {
     modal.classList.add("modal");
     modal.onclick = closeModal;
 
+    const closeModalButton = document.createElement("BUTTON");
+    closeModalButton.textContent = "X";
+    closeModalButton.classList.add("close-button");
+    closeModalButton.onclick = closeModal;
+
+    modal.appendChild(closeModalButton);
     modal.appendChild(image);
 
     const body = document.querySelector("body");
