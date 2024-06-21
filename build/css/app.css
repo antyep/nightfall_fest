@@ -386,6 +386,7 @@ h3 {
   left: 0;
   top: 0;
   width: 100%;
+  box-shadow: 0.1rem 0.2rem 0.3rem #333;
 }
 .header .content-header {
   padding: 2rem;
