@@ -582,6 +582,10 @@ h3 {
     gap: 2rem;
   }
 }
+.gallery-img img {
+  height: 20rem;
+  object-fit: cover;
+}
 
 .tickets-container {
   background-color: #4CB8B3;

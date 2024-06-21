@@ -15,5 +15,10 @@
     @include mix.desktop {
         @include mix.grid (4, 2rem);
     }
+
+    img {
+        height: 20rem;
+        object-fit: cover;
+    }
    }
 }
