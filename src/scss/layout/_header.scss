@@ -40,16 +40,19 @@
     align-items: center;
     gap: 2rem;
     @include mix.tablet {
-        flex-direction: row;
+    flex-direction: row;
     }
         a {
             color: white;
             font-size: 2.4rem;
-            
-            &:hover {
-                color: var.$yellow;
-            }
+
+        a:hover, 
+        &.active {
+        color: var.$yellow;
         }
+     }
 }
+
+
 
 

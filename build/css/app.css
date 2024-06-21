@@ -427,7 +427,7 @@ h3 {
   color: white;
   font-size: 2.4rem;
 }
-.main-navigation a:hover {
+.main-navigation a a:hover, .main-navigation a.active {
   color: #fdda00;
 }
 
