@@ -22,8 +22,15 @@ function createGallery() {
   function showImage(i) {
     const modal = document.createElement("DIV");
     modal.classList.add("modal");
+    modal.onclick = closeModal;
 
     const body = document.querySelector("body");
     body.appendChild(modal);
   }
+}
+
+function closeModal() {
+  const modal = document.querySelector(".modal");
+
+  modal?.remove();
 }
