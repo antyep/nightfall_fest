@@ -589,11 +589,14 @@ h3 {
 
 .modal {
   display: grid;
-  place-items: center;
   position: fixed;
+  place-items: center;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5) img;
-  background-color-max-width: 100rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  max-width: 100rem;
 }
 
 .tickets-container {
