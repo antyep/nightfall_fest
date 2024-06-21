@@ -5,12 +5,12 @@
     @include mix.container;
 
     @include mix.tablet {
-        @include mix.grid(2, 5rem);
+        @include mix.grid(2);
     }
 }
 
 .fest-content {
-    margin-top: 5rem;
+    display: inline-block;
     h1 {
         margin-bottom: 2rem;
     }
