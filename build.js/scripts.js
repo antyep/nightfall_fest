@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fixedNavigation();
   createGallery();
   linkHighlight();
+  scrollNav();
 });
 
 function fixedNavigation() {
@@ -69,16 +70,12 @@ function closeModal() {
 }
 
 function linkHighlight() {
-  console.log(`Scroll Y: ${window.scrollY}`);
   document.addEventListener("scroll", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".main-navigation a");
 
     let current = "";
     sections.forEach((section) => {
-      console.log(
-        `Section Top: ${section.offsetTop}, Section Height: ${section.offsetHeight}`
-      );
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
       if (window.scrollY >= sectionTop - sectionHeight / 3) {
@@ -91,6 +88,20 @@ function linkHighlight() {
       if (link.getAttribute("href") === "#" + current) {
         link.classList.add("active");
       }
+    });
+  });
+}
+
+function scrollNav() {
+  const navLinks = document.querySelectorAll(".main-navigation a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const sectionScroll = e.target.getAttribute("href");
+      const section = document.querySelector(sectionScroll);
+
+      section.scrollIntoView({ behavior: "smooth" });
     });
   });
 }
