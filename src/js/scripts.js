@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   fixedNavigation();
   createGallery();
+  linkHighlight();
 });
 
 function fixedNavigation() {
@@ -65,4 +66,27 @@ function closeModal() {
     const body = document.querySelector("body");
     body.classList.remove("overflow-hidden");
   }, 500);
+}
+
+function linkHighlight() {
+  document.addEventListener("scroll", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".main-navigation a");
+
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      if (link.getAttribute("href" === "#" + current)) {
+        link.classList.add("active");
+      }
+    });
+  });
 }
