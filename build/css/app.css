@@ -524,3 +524,16 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+.schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.schedule li {
+  padidng: 2.5rem;
+  font-weight: 700;
+}
+.schedule span {
+  font-weight: 400;
+}

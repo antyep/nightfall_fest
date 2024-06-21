@@ -37,4 +37,15 @@
     color: var.$white;
 }
 
+.schedule {
+    @include mix.list;
 
+    li {
+        padidng: 2.5rem;
+        font-weight: 700;
+    }
+
+    span {
+        font-weight: 400;
+    }
+}
