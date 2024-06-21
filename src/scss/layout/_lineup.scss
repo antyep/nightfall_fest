@@ -1,2 +1,40 @@
 @use "base/variables" as var;
 @use "base/mixins" as mix;
+
+
+.lineup {
+    background-color: var.$pink;
+    h3, 
+    .day {
+        text-align: center;
+        color: var.$white
+    }
+    .day {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        color: var.$white
+    }
+}
+
+.container-stage {
+    @include mix.container;
+    @include mix.tablet {
+        @include mix.grid(2);
+    }
+}
+
+.stage {
+    padding-top: 2rem;
+}
+
+.name-stage {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var.$white;
+}
+
+
