@@ -522,7 +522,6 @@ h3 {
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .schedule {
@@ -531,9 +530,23 @@ h3 {
   list-style: none;
 }
 .schedule li {
-  padidng: 2.5rem;
+  padding: 2.5rem;
   font-weight: 700;
 }
 .schedule span {
   font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #fdda00;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-lightgreen {
+  background-color: #4CB8B3;
+}
+.bg-lightgreen li:nth-child(odd) {
+  background-color: #5ebfbb;
 }

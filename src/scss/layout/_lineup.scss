@@ -34,18 +34,32 @@
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: var.$white;
 }
 
 .schedule {
     @include mix.list;
 
     li {
-        padidng: 2.5rem;
+        padding: 2.5rem;
         font-weight: 700;
     }
 
     span {
         font-weight: 400;
+    }
+}
+
+
+.bg-yellow {
+    background-color: var.$yellow;
+    li:nth-child(odd) {
+        background-color: lighten(var.$yellow, 5%);
+    }
+}
+
+.bg-lightgreen {
+    background-color: var.$light_green;
+    li:nth-child(odd) {
+        background-color: lighten(var.$light_green, 5%);
     }
 }
