@@ -587,6 +587,12 @@ h3 {
   object-fit: cover;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .tickets-container {
   background-color: #4CB8B3;
 }
