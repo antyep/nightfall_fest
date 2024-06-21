@@ -36,6 +36,9 @@ function createGallery() {
 
 function closeModal() {
   const modal = document.querySelector(".modal");
+  modal.classList.add("fade-out");
 
-  modal?.remove();
+  setTimeout(() => {
+    modal?.remove();
+  }, 500);
 }
