@@ -12,6 +12,14 @@ function createGallery() {
     image.alt = "gallery img";
     console.log(image);
 
+    image.onclick = function () {
+      showImage(i);
+    };
+
     gallery.appendChild(image);
+  }
+
+  function showImage(i) {
+    console.log("showImage", i);
   }
 }
