@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  fixedNavigation();
   createGallery();
 });
+
+function fixedNavigation() {
+  const header = document.querySelector(".header");
+  const aboutFest = document.querySelector(".about-fest");
+
+  document.addEventListener("scroll", function () {
+    if (aboutFest.getBoundingClientRect().bottom < 1) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  });
+}
 
 function createGallery() {
   const IMAGE_QUANTITY = 16;
