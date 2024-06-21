@@ -4,10 +4,15 @@ import gulpSass from "gulp-sass";
 
 const sass = gulpSass(dartSass);
 
+export function js(done) {
+  src("./src/js/scripts.js").pipe(dest("./build.js"));
+  done();
+}
+
 export function css(done) {
-  src("src/scss/app.scss", { sourcemaps: true })
+  src("./src/scss/app.scss", { sourcemaps: true })
     .pipe(sass().on("error", sass.logError))
-    .pipe(dest("build/css", { sourcemaps: "." }));
+    .pipe(dest("./build/css", { sourcemaps: "." }));
   done();
 }
 
