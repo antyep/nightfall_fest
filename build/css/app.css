@@ -570,6 +570,12 @@ h3 {
   }
 }
 
+.pass {
+  transition: transform 0.3s ease-in-out;
+}
+.pass:hover {
+  transform: scale(1.1);
+}
 .pass-name {
   font-size: 3.6rem;
   font-weight: 900;

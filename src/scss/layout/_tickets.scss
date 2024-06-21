@@ -17,6 +17,10 @@
 }
 
 .pass {
+    transition: transform .3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
     &-name {
         font-size: 3.6rem;
         font-weight: 900;
