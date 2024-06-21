@@ -24,6 +24,9 @@ function createGallery() {
 
   for (let i = 1; i <= IMAGE_QUANTITY; i++) {
     const image = document.createElement("IMG");
+    image.loading = "lazy";
+    image.width = "300";
+    image.height = "200";
     image.src = `./src/img/gallery/event/${i}.jpg`;
     image.alt = "gallery img";
 
