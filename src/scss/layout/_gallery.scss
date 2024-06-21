@@ -1,0 +1,19 @@
+@use "base/variableS" as var;
+@use "base/mixins" as mix;
+
+.gallery {
+    @include mix.container;
+   &-img {
+    @include mix.grid(1, 2rem);
+
+    @include mix.phone {
+        @include mix.grid(2, 2rem);
+    }
+    @include mix.tablet {
+        @include mix.grid(3, 2rem);
+    }
+    @include mix.desktop {
+        @include mix.grid (4, 2rem);
+    }
+   }
+}
