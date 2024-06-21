@@ -550,3 +550,72 @@ h3 {
 .bg-lightgreen li:nth-child(odd) {
   background-color: #5ebfbb;
 }
+
+.tickets-container {
+  background-color: #4CB8B3;
+}
+.tickets-container h3 {
+  color: #FFFFFF;
+}
+.tickets-container .tickets {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .tickets-container .tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pass-name {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #FFFFFF;
+}
+.pass-header, .pass-footer {
+  padding: 0.5rem;
+}
+.pass p {
+  text-align: center;
+  color: #FFFFFF;
+}
+.pass-header {
+  background-color: #F53756;
+}
+.pass p {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+.pass-body {
+  background-color: #FFFFFF;
+}
+.pass-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass-body li {
+  padding: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pass-footer {
+  background-color: #FFFFFF;
+  padding: 3rem;
+}
+.pass-footer p {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background-color: #752F97;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.pass-footer p:hover {
+  background-color: #391749;
+}
