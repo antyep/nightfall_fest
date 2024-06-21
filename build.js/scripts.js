@@ -30,6 +30,7 @@ function createGallery() {
     modal.appendChild(image);
 
     const body = document.querySelector("body");
+    body.classList.add("overflow-hidden");
     body.appendChild(modal);
   }
 }
@@ -40,5 +41,8 @@ function closeModal() {
 
   setTimeout(() => {
     modal?.remove();
+
+    const body = document.querySelector("body");
+    body.classList.remove("overflow-hidden");
   }, 500);
 }
