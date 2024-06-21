@@ -5,9 +5,7 @@
     @include mix.container;
 
     @include mix.tablet {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
+        @include mix.grid;
     }
 }
 
