@@ -30,6 +30,10 @@ body {
     font-size: 2rem;
     font-optical-sizing: auto;
     color: var.$black;
+
+    &.overflow-hidden {
+        overflow: hidden;
+    }
 }
 
 body > section {

@@ -171,9 +171,9 @@ select {
    * Correct the inability to style clickable types in iOS and Safari.
    */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -181,9 +181,9 @@ button,
    * Remove the inner border and padding in Firefox.
    */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -192,9 +192,9 @@ button::-moz-focus-inner,
    * Restore the focus styles unset by the previous rule.
    */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -238,8 +238,8 @@ textarea {
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -247,8 +247,8 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -256,7 +256,7 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -264,7 +264,7 @@ textarea {
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -334,6 +334,9 @@ body {
   font-optical-sizing: auto;
   color: #000000;
 }
+body.overflow-hidden {
+  overflow: hidden;
+}
 
 body > section {
   padding: 10rem 0;
@@ -376,7 +379,7 @@ h3 {
 }
 
 .header {
-  background-color: #4cb8b3;
+  background-color: #4CB8B3;
 }
 .header .content-header {
   padding: 2rem;
@@ -390,7 +393,7 @@ h3 {
   }
 }
 .header h1 {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -427,11 +430,7 @@ h3 {
 }
 .home-video .overlay {
   position: absolute;
-  background: linear-gradient(
-    270deg,
-    rgba(117, 47, 151, 0.6),
-    rgba(57, 23, 73, 0.9)
-  );
+  background: linear-gradient(270deg, rgba(117, 47, 151, 0.6), rgba(57, 23, 73, 0.9));
   inset: 0;
   display: flex;
   align-items: center;
@@ -450,14 +449,14 @@ h3 {
   z-index: 10;
 }
 .video-content h2 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 7rem;
   margin: 0;
 }
 .video-content p {
   display: inline-block;
-  background-color: #f53756;
-  color: #ffffff;
+  background-color: #F53756;
+  color: #FFFFFF;
   font-size: 2.4rem;
   font-weight: 700;
   padding: 1rem 2rem;
@@ -484,24 +483,24 @@ h3 {
   margin-bottom: 2rem;
 }
 .fest-content .date {
-  color: #4cb8b3;
+  color: #4CB8B3;
   font-weight: 700;
 }
 
 .lineup {
-  background-color: #f53756;
+  background-color: #F53756;
 }
 .lineup h3,
 .lineup .day {
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .lineup .day {
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .container-stage {
@@ -549,7 +548,7 @@ h3 {
 }
 
 .bg-lightgreen {
-  background-color: #4cb8b3;
+  background-color: #4CB8B3;
 }
 .bg-lightgreen li:nth-child(odd) {
   background-color: #5ebfbb;
@@ -623,10 +622,10 @@ h3 {
   }
 }
 .tickets-container {
-  background-color: #4cb8b3;
+  background-color: #4CB8B3;
 }
 .tickets-container h3 {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .tickets-container .tickets {
   width: 95%;
@@ -651,18 +650,17 @@ h3 {
   font-size: 3.6rem;
   font-weight: 900;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.pass-header,
-.pass-footer {
+.pass-header, .pass-footer {
   padding: 0.5rem;
 }
 .pass p {
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .pass-header {
-  background-color: #f53756;
+  background-color: #F53756;
 }
 .pass p {
   font-size: 2.2rem;
@@ -671,7 +669,7 @@ h3 {
   padding: 0.5rem 0;
 }
 .pass-body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 .pass-body ul {
   margin: 0;
@@ -683,13 +681,13 @@ h3 {
   border-bottom: 1px solid #e1e1e1;
 }
 .pass-footer {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 3rem;
 }
 .pass-footer p {
   font-size: 2.8rem;
   font-weight: 900;
-  background-color: #752f97;
+  background-color: #752F97;
   padding: 1rem 0;
   border-radius: 1rem;
   cursor: pointer;
@@ -699,11 +697,11 @@ h3 {
 }
 
 .footer {
-  background-color: #f53756;
+  background-color: #F53756;
   padding: 2rem 0;
 }
 .footer p {
   margin: 0;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
-} /*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
