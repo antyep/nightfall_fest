@@ -32,8 +32,8 @@ function createGallery() {
     closeModalButton.classList.add("close-button");
     closeModalButton.onclick = closeModal;
 
-    modal.appendChild(closeModalButton);
     modal.appendChild(image);
+    modal.appendChild(closeModalButton);
 
     const body = document.querySelector("body");
     body.classList.add("overflow-hidden");
